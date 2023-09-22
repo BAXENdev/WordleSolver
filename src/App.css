@@ -1,0 +1,96 @@
+
+#root {
+  width: 100%;
+}
+
+.title-box {
+  width: 100%;
+  text-align: center;
+}
+
+.app-container {
+  display: flex;
+}
+
+.left-panel {
+  flex: 1;
+  padding: 20px;
+}
+
+.right-panel {
+  flex: 0 0 40%;
+  height: calc(100vh - 60px); /* Assuming title-box height is around 60px */
+  padding: 20px;
+  border-left: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.input-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.single-input {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border: 1px solid #787c7e;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 44px;
+  /* cursor: none; */
+  caret-color: transparent;
+}
+
+.single-input:focus {
+  border: 2px solid #ccc;
+}
+
+.single-input.disabled {
+  border-color: darkgray;
+  background-color: #787c7e;
+}
+
+.single-input.active {
+  border-color: white;
+}
+
+
+.word-list {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  height: calc(100% - 50px); /* Considering h2 takes 50px approx */
+}
+
+.word-item {
+  background-color: rgb(66, 66, 66);
+  padding: 10px;
+  width: 200;
+  height: 60;
+  margin: 5px;
+  border-radius: 5px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(118,118,118);
+}
+
+.state-0 {
+  background-color: #787c7e;
+}
+
+.state-1 {
+  background-color: #c9b458;
+}
+
+.state-2 {
+  background-color: #6aaa64;
+}
+
+.state-3 {
+  background-color: #787c7e;
+}
+
