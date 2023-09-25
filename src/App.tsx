@@ -160,6 +160,7 @@ function App() {
   }
   
   const onEnter = () => {
+    if (state.activeRow === numRows) return;
     console.log("OnEnter");
     setState((currentState) => {
       const word = currentState.inputValues[currentState.activeRow].join('');

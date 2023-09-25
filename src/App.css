@@ -18,7 +18,7 @@
 }
 
 .right-panel {
-  flex: 0 0 40%;
+  flex: 0 0 70%;
   height: calc(100vh - 60px); /* Assuming title-box height is around 60px */
   padding: 20px;
   border-left: 1px solid #ccc;
