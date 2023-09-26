@@ -1,6 +1,7 @@
 
 #root {
   width: 100%;
+  overflow-y: hidden;
 }
 
 .title-box {
@@ -18,11 +19,11 @@
 }
 
 .right-panel {
-  flex: 0 0 70%;
-  height: calc(100vh - 60px); /* Assuming title-box height is around 60px */
+  flex: 0 0 50%;
+  height: calc(100vh - 200px); /* Assuming title-box height is around 60px */
   padding: 20px;
   border-left: 1px solid #ccc;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 .input-row {
@@ -61,17 +62,19 @@
   display: flex;
   flex-wrap: wrap;
   overflow-y: auto;
-  height: calc(100% - 50px); /* Considering h2 takes 50px approx */
+  height: 100%;
+  /* height: fit-content; */
+  align-content: flex-start;
 }
 
 .word-item {
   background-color: rgb(66, 66, 66);
   padding: 10px;
-  width: 200;
-  height: 60;
+  width: 80px;
+  height: 24px;
   margin: 5px;
   border-radius: 5px;
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   justify-content: center;
   align-items: center;

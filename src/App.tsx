@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import './App.css';
-import wordFile from './assets/words/_5_letter_words_sorted.txt';
+import wordFile from './assets/_5_letter_words_sorted.txt';
 
 /* 
 INPUT RULES:
